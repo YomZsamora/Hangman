@@ -6,8 +6,8 @@ public class GameTest {
 	@Test
 	public void select_selectAWord_string() {
 	    // Tests selectWord() function
-	    Game wordSelect = new Game();
+	    SelectCounty wordSelect = new SelectCounty();
 	    String expectedOutput = "bungoma";
-    	assertEquals(expectedOutput, wordSelect.selectCounty());
+    	assertEquals(expectedOutput, wordSelect.select());
     }
 }
