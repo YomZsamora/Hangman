@@ -10,6 +10,7 @@ public class GameTest {
 	public void select_selectAWord_string() {
 	    // Tests selectWord() function
 	    Game wordSelect = new Game();
-    	assertEquals(true, wordSelect.selectWord(4));
+	    String expectedOutput = "bungoma";
+    	assertEquals(expectedOutput, wordSelect.selectWord());
 	}
 }
