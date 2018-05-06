@@ -1,0 +1,12 @@
+import org.junit.*;
+import static org.junit.Assert.*;
+
+public class GameTest {
+
+    @Test
+    public void select_randomCounty_string(){
+    	SelectCounty countySelect = new SelectCounty();
+    	String expectedOutput = "nyandarua";
+    	assertEquals(expectedOutput, countySelect.chooseCounty(3));
+    }
+}

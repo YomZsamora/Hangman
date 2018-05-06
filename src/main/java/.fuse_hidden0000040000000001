@@ -1,0 +1,24 @@
+import java.io.*;
+import java.util.Scanner;
+
+public class Game {
+
+   Console myConsole = System.console();
+   // private int attempts = 10; 
+
+  	public static void main(String[] args) {
+      Game start = new Game();      
+      start.startGuessing();
+      // guessWord.playGame();
+   }
+
+   public void startGuessing(){
+      SelectCounty guessWord = new SelectCounty();
+      guessWord.randomSelect();
+      String county = guessWord.getSelectedCounty(); // Getter method gets selected county from SelectCounty Class
+      System.out.println(county);
+   }
+
+   
+
+}
