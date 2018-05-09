@@ -12,7 +12,7 @@ public class SelectCounty{
     	String[] counties = {"nyamira", "bungoma", "kakamega", "nyandarua", "marsabit", "mandera", "garissa", "kilifi", "kwale", "mombasa"};
     	Random rand = new Random(); 
     	int x = rand.nextInt(counties.length); // Generates random number according to array's length
-    	selectedCounty = counties[x];
+    	selectedCounty = counties[x]; // Assigns value
 	}
 
 	public String getCounty() {

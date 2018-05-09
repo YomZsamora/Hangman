@@ -45,15 +45,16 @@ public class Game {
          // For every character in the word
          for(int j=0;j<wordLength;j++){
             if(letter == word[j]){
-               fill.setCharAt(j, letter); // If true, add letter to fill[x]
+               fill.setCharAt(j, letter); // If true, add letter to fill[j]
                System.out.println(fill + "\r\n"); // Then print it out
                score++; // Gives player score if correct letter
             }            
          }
+         String countyName = new String(fill);
          guessesMade++; 
          attempts--;
          if(score == wordLength){ // Checks if current score is same as word length. If yes, player wins!
-            System.out.println("\r\nCONGRATULATIONS! You have GUESSED the county CORRECTLY. The county was " + fill + ".");
+            System.out.println("\r\nCONGRATULATIONS! You have GUESSED the county CORRECTLY. The county was " + countyName.toUpperCase() + ".");
             i=10; // Ends loop
          }
          if (guessesMade == 10) { // If attempts made are 10 in total, then player has exhausted
