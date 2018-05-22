@@ -15,5 +15,5 @@ A small Java Application emulating the infamous kid's game, Hangman. Clone it, r
 ##### Installation
 - Clone this repository to a location in your file system.
 - Open terminal command line then navigate to the root folder of the application.
-- Run `gradle compileJava` command and to compile the app.
+- Run `gradle compileJava` command to compile the app.
 - Then navigate to `build/classes/java/main` and run `java Game` to start guessing Kenyan counties.

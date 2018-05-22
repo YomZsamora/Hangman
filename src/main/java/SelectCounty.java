@@ -7,8 +7,7 @@ public class SelectCounty{
 
 	public void select(){
       Console myConsole = System.console();
-      System.out.println("Lets play the classic Hangman. You can either play by yourself or with a friend. Press Enter to continue:");
-      myConsole.readLine();
+      System.out.println("Lets play the classic Hangman. You can either play by yourself or with a friend.");
       String[] counties = {"nyamira", "bungoma", "kakamega", "nyandarua", "marsabit", "mandera", "garissa", "kilifi", "kwale", "mombasa", "migori", "kiambu", "siaya", "kajiado", "kericho", "laikipia", "samburu", "kirinyaga", "lamu", "isiolo"};
       Random rand = new Random(); 
     	int x = rand.nextInt(counties.length); // Generates random number according to array's length
